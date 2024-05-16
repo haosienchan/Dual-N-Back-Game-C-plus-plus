@@ -115,7 +115,7 @@ int main(){
     int next = 0;
     while (next != 1)
     {
-    cout<< "select difficulty: ";
+    cout<< "select difficulty:(1-3) ";
     cin>> num;
     while(i < num){
         b1[i].printboard();
@@ -126,7 +126,7 @@ int main(){
     while (i<20){
         b1[i].printboard();
         ans = b1[i].compare(b1[i-num]);
-        cout<<"position(P) \t Number(N)"<<endl;
+        cout<<"position(P) \t Value(V) \t Not Match(M)"<<endl;
         cin>>choice;
         if (choice == ans){
             score++;
